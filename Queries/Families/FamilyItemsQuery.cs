@@ -1,6 +1,6 @@
 ﻿namespace BggSharp.Queries.Families;
 
-public class FamilyItemsQuery : BggQuery<FamiliyItems, FamilyItemsQueryParameters>
+public class FamilyItemsQuery : BggQuery<FamilyItems, FamilyItemsQueryParameters>
 {
     public FamilyItemsQuery(IBggClient bggClient) : base(bggClient)
     {
