@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.Xml;
+using System.Xml.Serialization;
 
 namespace BggSharp;
 
@@ -16,9 +17,14 @@ public class DefaultBggClient : IBggClient
         var response = await _httpClient.GetAsync(uri);
         response.EnsureSuccessStatusCode();
 
+        var settings = new XmlReaderSettings
+        {
+            DtdProcessing = DtdProcessing.Parse
+        };
+
         var serialObject = new XmlSerializer(typeof(T));
-        using var reader = await response.Content.ReadAsStreamAsync();
-        var result = serialObject.Deserialize(reader) as T;
+        using var stream = await response.Content.ReadAsStreamAsync();
+        var result = serialObject.Deserialize(stream) as T;
         return result;
     }
 }
