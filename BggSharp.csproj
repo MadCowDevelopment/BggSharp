@@ -9,4 +9,15 @@
 		<Version>0.1.0</Version>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <Folder Include="Queries\Forums\" />
+	  <Folder Include="Queries\Guilds\" />
+	  <Folder Include="Queries\Collections\" />
+	  <Folder Include="Queries\HotItems\" />
+	  <Folder Include="Queries\Search\" />
+	  <Folder Include="Queries\Plays\" />
+	  <Folder Include="Queries\Users\" />
+	  <Folder Include="Queries\Threads\" />
+	</ItemGroup>
+
 </Project>

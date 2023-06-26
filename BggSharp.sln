@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BggSharp", "BggSharp.csproj", "{8A0ED243-567D-406B-A933-72DCC6C4AC6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BggSharp.Test", "..\BggSharp.Test\BggSharp.Test.csproj", "{60B03C42-4EFA-4061-925E-EA12C41E3F19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8A0ED243-567D-406B-A933-72DCC6C4AC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A0ED243-567D-406B-A933-72DCC6C4AC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A0ED243-567D-406B-A933-72DCC6C4AC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B03C42-4EFA-4061-925E-EA12C41E3F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B03C42-4EFA-4061-925E-EA12C41E3F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B03C42-4EFA-4061-925E-EA12C41E3F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B03C42-4EFA-4061-925E-EA12C41E3F19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
