@@ -13,7 +13,6 @@
 	  <Folder Include="Queries\Collections\" />
 	  <Folder Include="Queries\HotItems\" />
 	  <Folder Include="Queries\Search\" />
-	  <Folder Include="Queries\Plays\" />
 	</ItemGroup>
 
 </Project>
