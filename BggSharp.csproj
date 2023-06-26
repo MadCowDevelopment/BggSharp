@@ -15,8 +15,6 @@
 	  <Folder Include="Queries\HotItems\" />
 	  <Folder Include="Queries\Search\" />
 	  <Folder Include="Queries\Plays\" />
-	  <Folder Include="Queries\Users\" />
-	  <Folder Include="Queries\Threads\" />
 	</ItemGroup>
 
 </Project>
