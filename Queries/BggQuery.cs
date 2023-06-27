@@ -28,6 +28,7 @@ public abstract class BggQuery<TItem, TParameters> where TItem : class
 
             builder.Append($"{property.Name.ToLower()}=");
             if (value is IEnumerable enumerable and not string) builder.Append(string.Join(",", enumerable.Cast<object>()));
+            else if (value is bool boolValue) builder.Append(boolValue ? "1" : "0");
             else builder.Append(value.ToString());
         }
 
