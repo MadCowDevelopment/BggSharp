@@ -9,8 +9,4 @@
 		<Version>0.1.0</Version>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <Folder Include="Queries\Search\" />
-	</ItemGroup>
-
 </Project>
