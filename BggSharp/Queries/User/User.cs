@@ -5,48 +5,27 @@ namespace BggSharp.Queries.User;
 [XmlRoot(ElementName = "user")]
 public class User
 {
-    [XmlAttribute(AttributeName = "id")]
-    public int Id { get; set; }
-    [XmlAttribute(AttributeName = "name")]
-    public string Name { get; set; }
-    [XmlAttribute(AttributeName = "termsofuse")]
-    public string TermsOfUse { get; set; }
-    [XmlElement(ElementName = "firstname")]
-    public Firstname Firstname { get; set; }
-    [XmlElement(ElementName = "lastname")]
-    public Lastname Lastname { get; set; }
-    [XmlElement(ElementName = "avatarlink")]
-    public AvatarLink AvatarLink { get; set; }
-    [XmlElement(ElementName = "yearregistered")]
-    public YearRegistered YearRegistered { get; set; }
-    [XmlElement(ElementName = "lastlogin")]
-    public LastLogin LastLogin { get; set; }
-    [XmlElement(ElementName = "stateorprovince")]
-    public StateOrProvince StateOrProvince { get; set; }
-    [XmlElement(ElementName = "country")]
-    public Country Country { get; set; }
-    [XmlElement(ElementName = "webaddress")]
-    public WebAddress WebAddress { get; set; }
-    [XmlElement(ElementName = "xboxaccount")]
-    public XBoxAccount XBoxAccount { get; set; }
-    [XmlElement(ElementName = "wiiaccount")]
-    public Wiiaccount Wiiaccount { get; set; }
-    [XmlElement(ElementName = "psnaccount")]
-    public PSNAccount PSNAccount { get; set; }
-    [XmlElement(ElementName = "battlenetaccount")]
-    public BattleNetAccount BattleNetAccount { get; set; }
-    [XmlElement(ElementName = "steamaccount")]
-    public SteamAccount SteamAccount { get; set; }
-    [XmlElement(ElementName = "traderating")]
-    public TradeRating TradeRating { get; set; }
-    [XmlElement(ElementName = "buddies")]
-    public BuddyItems Buddies { get; set; }
-    [XmlElement(ElementName = "guilds")]
-    public GuildItems Guilds { get; set; }
-    [XmlElement(ElementName = "top")]
-    public TopItems Top { get; set; }
-    [XmlElement(ElementName = "hot")]
-    public HotItems Hot { get; set; }
+    [XmlAttribute(AttributeName = "id")] public int Id { get; set; }
+    [XmlAttribute(AttributeName = "name")] public string Name { get; set; }
+    [XmlAttribute(AttributeName = "termsofuse")] public string TermsOfUse { get; set; }
+    [XmlElement(ElementName = "firstname")] public Firstname Firstname { get; set; }
+    [XmlElement(ElementName = "lastname")] public Lastname Lastname { get; set; }
+    [XmlElement(ElementName = "avatarlink")] public AvatarLink AvatarLink { get; set; }
+    [XmlElement(ElementName = "yearregistered")] public YearRegistered YearRegistered { get; set; }
+    [XmlElement(ElementName = "lastlogin")] public LastLogin LastLogin { get; set; }
+    [XmlElement(ElementName = "stateorprovince")] public StateOrProvince StateOrProvince { get; set; }
+    [XmlElement(ElementName = "country")] public Country Country { get; set; }
+    [XmlElement(ElementName = "webaddress")] public WebAddress WebAddress { get; set; }
+    [XmlElement(ElementName = "xboxaccount")] public XBoxAccount XBoxAccount { get; set; }
+    [XmlElement(ElementName = "wiiaccount")] public Wiiaccount Wiiaccount { get; set; }
+    [XmlElement(ElementName = "psnaccount")] public PSNAccount PSNAccount { get; set; }
+    [XmlElement(ElementName = "battlenetaccount")] public BattleNetAccount BattleNetAccount { get; set; }
+    [XmlElement(ElementName = "steamaccount")] public SteamAccount SteamAccount { get; set; }
+    [XmlElement(ElementName = "traderating")] public TradeRating TradeRating { get; set; }
+    [XmlElement(ElementName = "buddies")] public BuddyItems Buddies { get; set; }
+    [XmlElement(ElementName = "guilds")] public GuildItems Guilds { get; set; }
+    [XmlElement(ElementName = "top")] public TopItems Top { get; set; }
+    [XmlElement(ElementName = "hot")] public HotItems Hot { get; set; }
 }
 
 [XmlRoot(ElementName = "firstname")] public class Firstname { [XmlAttribute(AttributeName = "value")] public string Value { get; set; } }
