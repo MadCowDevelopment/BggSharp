@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace BggSharp.Queries.Forum;
+namespace BggSharp.Queries.Collection;
 
 [XmlRoot(ElementName = "ranks")]
 public class RankItems

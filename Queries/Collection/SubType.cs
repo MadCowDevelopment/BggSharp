@@ -1,12 +1,11 @@
-﻿
-namespace BggSharp.Queries.Forum;
+﻿namespace BggSharp.Queries.Collection;
 
 public enum SubType
 {
-    boardgame, 
-    boardgameexpansion, 
-    boardgameaccessory, 
+    boardgame,
+    boardgameexpansion,
+    boardgameaccessory,
     rpgitem,
-    rpgissue, 
+    rpgissue,
     videogame
 }

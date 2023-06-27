@@ -1,5 +1,4 @@
-﻿
-namespace BggSharp.Queries.Forum;
+﻿namespace BggSharp.Queries.Collection;
 
 public class CollectionQueryParameters
 {

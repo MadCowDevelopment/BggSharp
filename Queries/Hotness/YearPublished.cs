@@ -1,9 +1,9 @@
 ﻿using System.Xml.Serialization;
 
-namespace BggSharp.Queries.Collection;
+namespace BggSharp.Queries.Hotness;
 
-[XmlRoot(ElementName = "usersrated")]
-public class UsersRated
+[XmlRoot(ElementName = "yearpublished")]
+public class YearPublished
 {
     [XmlAttribute(AttributeName = "value")] public int Value { get; set; }
 }

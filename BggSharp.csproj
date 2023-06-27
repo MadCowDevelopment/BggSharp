@@ -10,7 +10,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Folder Include="Queries\HotItems\" />
 	  <Folder Include="Queries\Search\" />
 	</ItemGroup>
 
