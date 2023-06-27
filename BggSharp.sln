@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BggSharp", "BggSharp.csproj", "{8A0ED243-567D-406B-A933-72DCC6C4AC6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BggSharp", "BggSharp\BggSharp.csproj", "{8A0ED243-567D-406B-A933-72DCC6C4AC6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BggSharp.Test", "..\BggSharp.Test\BggSharp.Test.csproj", "{60B03C42-4EFA-4061-925E-EA12C41E3F19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BggSharp.Test", "BggSharp.Test\BggSharp.Test.csproj", "{60B03C42-4EFA-4061-925E-EA12C41E3F19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
