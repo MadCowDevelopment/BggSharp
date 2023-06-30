@@ -20,7 +20,7 @@ public class QueryTest
     {
         var client = new ThingsQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new ThingsQueryParameters(new[] { 183685 }));
+        var result = await client.Execute(new ThingsQueryParameters(new[] { 183685 }));
 
         Assert.IsNotNull(result);
     }
@@ -30,7 +30,7 @@ public class QueryTest
     {
         var client = new FamiliesQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new FamiliesQueryParameters(new[] { 2 }));
+        var result = await client.Execute(new FamiliesQueryParameters(new[] { 2 }));
 
         Assert.IsNotNull(result);
     }
@@ -40,7 +40,7 @@ public class QueryTest
     {
         var client = new ForumsQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new ForumsQueryParameters(352606, ForumListType.thing));
+        var result = await client.Execute(new ForumsQueryParameters(352606, ForumListType.thing));
 
         Assert.IsNotNull(result);
     }
@@ -50,7 +50,7 @@ public class QueryTest
     {
         var client = new ForumQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new ForumQueryParameters(791, 3));
+        var result = await client.Execute(new ForumQueryParameters(791, 3));
 
         Assert.IsNotNull(result);
     }
@@ -60,7 +60,7 @@ public class QueryTest
     {
         var client = new ThreadQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new ThreadQueryParameters(618360));
+        var result = await client.Execute(new ThreadQueryParameters(618360));
 
         Assert.IsNotNull(result);
     }
@@ -70,7 +70,7 @@ public class QueryTest
     {
         var client = new UserQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new UserQueryParameters("MadMihi", true, true, true, true));
+        var result = await client.Execute(new UserQueryParameters("MadMihi", true, true, true, true));
 
         Assert.IsNotNull(result);
     }
@@ -80,7 +80,7 @@ public class QueryTest
     {
         var client = new GuildQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new GuildQueryParameters(1303, true));
+        var result = await client.Execute(new GuildQueryParameters(1303, true));
 
         Assert.IsNotNull(result);
     }
@@ -90,7 +90,7 @@ public class QueryTest
     {
         var client = new PlaysQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new PlaysQueryParameters("betsychuck"));
+        var result = await client.Execute(new PlaysQueryParameters("betsychuck"));
 
         Assert.IsNotNull(result);
     }
@@ -100,7 +100,7 @@ public class QueryTest
     {
         var client = new CollectionQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new CollectionQueryParameters("MadMihi") {  Stats = true });
+        var result = await client.Execute(new CollectionQueryParameters("MadMihi") {  Stats = true });
 
         Assert.IsNotNull(result);
     }
@@ -110,7 +110,7 @@ public class QueryTest
     {
         var client = new HotnessQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new HotnessQueryParameters());
+        var result = await client.Execute(new HotnessQueryParameters());
 
         Assert.IsNotNull(result);
     }
@@ -120,7 +120,7 @@ public class QueryTest
     {
         var client = new SearchQuery(new DefaultBggClient(new HttpClient()));
 
-        var result = await client.Query(new SearchQueryParameters("president"));
+        var result = await client.Execute(new SearchQueryParameters("president"));
 
         Assert.IsNotNull(result);
     }

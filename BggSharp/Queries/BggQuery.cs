@@ -12,7 +12,7 @@ public abstract class BggQuery<TItem, TParameters> where TItem : class
         _bggClient = bggClient;
     }
 
-    public Task<TItem?> Query(TParameters parameters)
+    public Task<TItem?> Execute(TParameters parameters)
     {
         var builder = new StringBuilder();
         builder.Append($"{BaseUrl}");
